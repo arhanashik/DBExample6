@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="59dp"
+        android:text="Username"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="-13dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="25sp"
+        android:layout_alignStart="@id/textView1"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="198dp"
+        android:onClick="addUser"
+        android:text="Add User"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_alignTop="@+id/button"
+        android:onClick="viewAllDetail"
+        android:text="View All Details"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/editText1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/editText1"
+        android:onClick="updateData"
+        android:text="Update Data"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/editText1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignTop="@+id/button3"
+        android:onClick="deleteData"
+        android:text="Delete Data"
+        android:textSize="15sp"
+        android:layout_alignRight="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="331dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="114dp"
+        android:text="Get Details"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/button"
+        android:onClick="getDetails"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="117dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:layout_alignLeft="@+id/editText1" />
+
+
+</RelativeLayout>

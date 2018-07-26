@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/enterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/idText"/>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="25sp"
+        android:layout_below="@id/idText"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/enterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chirag"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/nameText"
+        android:layout_below="@id/enterId"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/passText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:textSize="25sp"
+        android:layout_below="@id/nameText"
+        android:layout_alignStart="@id/nameText"
+        android:layout_alignLeft="@id/nameText"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/enterPass"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/passText"
+        android:layout_below="@id/enterName"/>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button_shape"
+        android:text="Update"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passText"
+        android:layout_alignStart="@+id/updateBtn"
+        android:background="@drawable/delete_btn_shape"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/updateBtn" />
+</RelativeLayout>
